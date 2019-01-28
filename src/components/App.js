@@ -10,7 +10,6 @@ import Home from './Home';
 import About from './About';
 import Courses from './Courses';
 import Teachers from './Teachers';
-import NotFound from './NotFound';
 
 const App = () => (
   <BrowserRouter>
