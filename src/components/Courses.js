@@ -1,7 +1,8 @@
 import React from 'react';
 import { 
   NavLink,
-  Route
+  Route,
+  Redirect
 } from 'react-router-dom';
 
 // App Components
@@ -21,12 +22,11 @@ const Courses = () => (
       </ul>
     </div>
     
-    {/* Write routes here... */}
-    <div className="container">
+    {/* Write routes here... */}      
+      <Route exact path="/courses" render={ () => <Redirect to="/courses" /> } />
       <Route path="/courses/html" component={HTML} />
       <Route path="/courses/css" component={CSS} />
       <Route path="/courses/javascript" component={JavaScript} />
-    </div>
   </div>
 );
 
