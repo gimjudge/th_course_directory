@@ -11,6 +11,7 @@ import Home from './Home';
 import About from './About';
 import Courses from './Courses';
 import Teachers from './Teachers';
+import Featured from './Featured';
 import NotFound from './NotFound';
 
 const App = () => (
@@ -21,7 +22,8 @@ const App = () => (
 			<Route exact path="/" component={Home} />
 			<Route path="/about" render={ () => <About title='About' /> } />
 			<Route path="/courses" component={Courses} />
-			<Route path="/teachers" component={Teachers} />
+			<Route exact path="/teachers" component={Teachers} />
+			<Route path="/teachers/:topic/:fname-:lname" component={Featured} />
 			<Route component={NotFound} />
 		</Switch>
 	</div>
