@@ -23,7 +23,7 @@ const App = () => (
 			<Route path="/about" render={ () => <About title='About' /> } />
 			<Route path="/courses" component={Courses} />
 			<Route exact path="/teachers" component={Teachers} />
-			<Route path="/teachers/:topic/:fname-:lname" component={Featured} />
+			<Route path="/teachers/:topic/:name" component={Featured} />
 			<Route component={NotFound} />
 		</Switch>
 	</div>
